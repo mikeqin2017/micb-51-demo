@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="EFM8UB2_RainbowBlinky" boardCompatibility="brd5001a:0.0.0.A01" partCompatibility="mcu.8051.efm8.ub2.efm8ub20f64g-a-qfp48" toolchainCompatibility="com.silabs.ss.tool.ide.c8051.toolchain.keil.cdt:9.53.0" sdkCompatibility="com.silabs.sdk.8051:4.1.1._-963069327" propertyScope="project" contentRoot="file:/C:/Users/mike.qin/SimplicityStudio/v4_workspace/EFM8UB2_RainbowBlinky/">
+  <folder name="inc" uri="inc/" includeAllFiles="false" includeAllFolders="false">
+    <folder name="config" uri="config/" includeAllFiles="false" includeAllFolders="false">
+      <file name="efm8_config.h"/>
+      <file name="joystick_config.h"/>
+      <file name="memory_lcd_config.h"/>
+      <file name="rainbowblinky_config.h"/>
+      <file name="rgb_led_config.h"/>
+    </folder>
+    <file name="adc.h"/>
+    <file name="InitDevice.h"/>
+    <file name="rainbowblinky.h"/>
+  </folder>
+  <folder name="src" uri="src/" includeAllFiles="false" includeAllFolders="false">
+    <file name="adc.c"/>
+    <file name="InitDevice.c"/>
+    <file name="Interrupts.c"/>
+    <file name="main.c"/>
+    <file name="rainbowblinky.c"/>
+  </folder>
+  <file name="EFM8UB2_RainbowBlinky.hwconf"/>
+  <sourceFolder></sourceFolder>
+  <property key="core.installationPath" value="file:/C:/Users/mike.qin/SimplicityStudio/v4_workspace/EFM8UB2_RainbowBlinky"/>
+  <property key="projectCommon.buildArtifactType" value="EXE"/>
+  <property key="projectCommon.importModeId" value="LINK_LIBRARIES"/>
+  <includePath languageCompatibility="c" uri="studio:/project/inc/"/>
+  <includePath languageCompatibility="c" uri="studio:/project/inc/config/"/>
+  <module builtin="true" id="com.silabs.sdk.si8051.external.bsp.efm8_bsp"/>
+  <module builtin="true" id="com.silabs.sdk.si8051.external.efm8PeripheralDriver.spi0"/>
+  <module builtin="true" id="com.silabs.sdk.si8051.external.bsp.efm8_joystick"/>
+  <module builtin="true" id="com.silabs.sdk.si8051.external.bsp.efm8_rgb_led"/>
+  <module builtin="true" id="com.silabs.sdk.si8051.external.bsp.efm8_memory_lcd"/>
+  <module builtin="true" id="com.silabs.sdk.si8051.shared"/>
+  <configuration name="com.silabs.ss.tool.ide.c8051.toolchain.keil.cdt.debug#com.silabs.ss.tool.ide.c8051.toolchain.keil.cdt:9.53.0" label="Keil 8051 v9.53 - Debug" stockConfigCompatibility="com.silabs.ss.tool.ide.c8051.toolchain.keil.cdt.debug">
+    <property key="buildArtifactType" value="EXE"/>
+    <excludedPath>src/Interrupts.c</excludedPath>
+    <excludedPath>lib/efm8bb1_slstk2020a</excludedPath>
+    <excludedPath>lib/efm8bb2_slstk2021a</excludedPath>
+    <excludedPath>lib/efm8bb3_slstk2022a</excludedPath>
+    <excludedPath>lib/efm8bb3_brd5203a</excludedPath>
+    <excludedPath>lib/efm8bb3_brd5204a</excludedPath>
+    <excludedPath>lib/efm8lb1_slstk2030a</excludedPath>
+    <excludedPath>lib/efm8sb1_slstk2010a</excludedPath>
+    <excludedPath>lib/efm8sb2_slstk2011a</excludedPath>
+    <excludedPath>lib/efm8ub1_slstk2000a</excludedPath>
+    <excludedPath>lib/efm8ub3_sltb005a</excludedPath>
+    <excludedPath>lib/efm8bb1</excludedPath>
+    <excludedPath>lib/efm8bb2</excludedPath>
+    <excludedPath>lib/efm8bb3</excludedPath>
+    <excludedPath>lib/efm8lb1</excludedPath>
+    <excludedPath>lib/efm8ub1</excludedPath>
+    <excludedPath>lib/efm8ub3</excludedPath>
+    <excludedPath>lib/efm8sb1</excludedPath>
+    <excludedPath>lib/efm8sb2</excludedPath>
+    <description></description>
+    <outputFileBase>${ProjName}</outputFileBase>
+    <prebuildStep></prebuildStep>
+    <postbuildStep></postbuildStep>
+    <macroDefinition languageCompatibility="c" name="DEBUG" value="1"/>
+    <toolOption toolId="com.silabs.ide.si8051.keil.toolchain.assembler" optionId="com.silabs.ide.si8051.keil.assembler.category.symbols.def">
+      <toolListOption value="SILABS_STARTUP=1"/>
+    </toolOption>
+  </configuration>
+  <configuration name="com.silabs.ss.tool.ide.c8051.toolchain.keil.cdt.release#com.silabs.ss.tool.ide.c8051.toolchain.keil.cdt:9.53.0" label="Keil 8051 v9.53 - Release" stockConfigCompatibility="com.silabs.ss.tool.ide.c8051.toolchain.keil.cdt.release">
+    <property key="buildArtifactType" value="EXE"/>
+    <excludedPath>src/Interrupts.c</excludedPath>
+    <excludedPath>lib/efm8bb1_slstk2020a</excludedPath>
+    <excludedPath>lib/efm8bb2_slstk2021a</excludedPath>
+    <excludedPath>lib/efm8bb3_slstk2022a</excludedPath>
+    <excludedPath>lib/efm8bb3_brd5203a</excludedPath>
+    <excludedPath>lib/efm8bb3_brd5204a</excludedPath>
+    <excludedPath>lib/efm8lb1_slstk2030a</excludedPath>
+    <excludedPath>lib/efm8sb1_slstk2010a</excludedPath>
+    <excludedPath>lib/efm8sb2_slstk2011a</excludedPath>
+    <excludedPath>lib/efm8ub1_slstk2000a</excludedPath>
+    <excludedPath>lib/efm8ub3_sltb005a</excludedPath>
+    <excludedPath>lib/efm8bb1</excludedPath>
+    <excludedPath>lib/efm8bb2</excludedPath>
+    <excludedPath>lib/efm8bb3</excludedPath>
+    <excludedPath>lib/efm8lb1</excludedPath>
+    <excludedPath>lib/efm8ub1</excludedPath>
+    <excludedPath>lib/efm8ub3</excludedPath>
+    <excludedPath>lib/efm8sb1</excludedPath>
+    <excludedPath>lib/efm8sb2</excludedPath>
+    <description></description>
+    <outputFileBase>${ProjName}</outputFileBase>
+    <prebuildStep></prebuildStep>
+    <postbuildStep></postbuildStep>
+    <macroDefinition languageCompatibility="c" name="NDEBUG" value="1"/>
+    <toolOption toolId="com.silabs.ide.si8051.keil.toolchain.assembler" optionId="com.silabs.ide.si8051.keil.assembler.category.symbols.def">
+      <toolListOption value="SILABS_STARTUP=1"/>
+    </toolOption>
+  </configuration>
+</project>
