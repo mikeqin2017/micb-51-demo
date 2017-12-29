@@ -1,0 +1,10 @@
+"./lib/bsp/efm8_retargetserial/retargetio.OBJ",
+"./lib/bsp/efm8_retargetserial/retargetserial.OBJ",
+"./lib/efm8ub2/peripheralDrivers/src/spi_0.OBJ",
+"./lib/efm8ub2/peripheralDrivers/src/uart_0.OBJ",
+"./lib/efm8ub2/peripheralDrivers/src/uart_1.OBJ",
+"./src/InitDevice.OBJ",
+"./src/Interrupts.OBJ",
+"./src/SILABS_STARTUP.OBJ",
+"./src/main.OBJ"
+TO "MICB-51.OMF.CRBUILD" REMOVEUNUSED PRINT(.\MICB-51.m51) PAGEWIDTH (120) PAGELENGTH (65) CLASSES( ECODE(C:0x0 - C:0xfbfe), HCONST(C:0x0 - C:0xfbfe), XDATA(X:0x0 - X:0xfff), HDATA(X:0x0 - X:0xfff))

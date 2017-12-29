@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>EFM8UB2_RainbowBlinky</name>
+	<name>MICB-51</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -11,18 +11,11 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
-		<buildCommand>
-			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
-			<triggers>full,incremental,</triggers>
-			<arguments>
-			</arguments>
-		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.cdt.core.cnature</nature>
 		<nature>com.silabs.ss.framework.ide.project.sls.core.SLSProjectNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
-		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
 	<linkedResources>
 		<link>
@@ -36,24 +29,19 @@
 			<locationURI>STUDIO_SDK_LOC/kits/common/bsp/bsp.h</locationURI>
 		</link>
 		<link>
-			<name>lib/bsp/efm8_joystick/joystick.c</name>
+			<name>lib/bsp/efm8_retargetserial/retargetio.c</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_joystick/joystick.c</locationURI>
+			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_retargetserial/retargetio.c</locationURI>
 		</link>
 		<link>
-			<name>lib/bsp/efm8_joystick/joystick.h</name>
+			<name>lib/bsp/efm8_retargetserial/retargetserial.c</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_joystick/joystick.h</locationURI>
+			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_retargetserial/retargetserial.c</locationURI>
 		</link>
 		<link>
-			<name>lib/bsp/efm8_rgb_led/rgb_led.c</name>
+			<name>lib/bsp/efm8_retargetserial/retargetserial.h</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_rgb_led/rgb_led.c</locationURI>
-		</link>
-		<link>
-			<name>lib/bsp/efm8_rgb_led/rgb_led.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_rgb_led/rgb_led.h</locationURI>
+			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_retargetserial/retargetserial.h</locationURI>
 		</link>
 		<link>
 			<name>lib/efm8ub2_slstk2001a/bsp/bsp_config.h</name>
@@ -61,49 +49,19 @@
 			<locationURI>STUDIO_SDK_LOC/kits/EFM8UB2_SLSTK2001A/config/bsp_config.h</locationURI>
 		</link>
 		<link>
-			<name>lib/bsp/efm8_memory_lcd/inc/disp.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_memory_lcd/inc/disp.h</locationURI>
-		</link>
-		<link>
-			<name>lib/bsp/efm8_memory_lcd/inc/fifo.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_memory_lcd/inc/fifo.h</locationURI>
-		</link>
-		<link>
-			<name>lib/bsp/efm8_memory_lcd/inc/render.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_memory_lcd/inc/render.h</locationURI>
-		</link>
-		<link>
-			<name>lib/bsp/efm8_memory_lcd/inc/spi.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_memory_lcd/inc/spi.h</locationURI>
-		</link>
-		<link>
-			<name>lib/bsp/efm8_memory_lcd/inc/tick.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_memory_lcd/inc/tick.h</locationURI>
-		</link>
-		<link>
-			<name>lib/bsp/efm8_memory_lcd/inc/utils.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_memory_lcd/inc/utils.h</locationURI>
-		</link>
-		<link>
-			<name>lib/bsp/efm8_memory_lcd/src/disp.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_memory_lcd/src/disp.c</locationURI>
-		</link>
-		<link>
-			<name>lib/bsp/efm8_memory_lcd/src/render.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_memory_lcd/src/render.c</locationURI>
-		</link>
-		<link>
 			<name>lib/efm8ub2/peripheralDrivers/inc/spi_0.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/Device/EFM8UB2/peripheral_driver/inc/spi_0.h</locationURI>
+		</link>
+		<link>
+			<name>lib/efm8ub2/peripheralDrivers/inc/uart_0.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/Device/EFM8UB2/peripheral_driver/inc/uart_0.h</locationURI>
+		</link>
+		<link>
+			<name>lib/efm8ub2/peripheralDrivers/inc/uart_1.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/Device/EFM8UB2/peripheral_driver/inc/uart_1.h</locationURI>
 		</link>
 		<link>
 			<name>lib/efm8ub2/peripheralDrivers/src/spi_0.c</name>
@@ -111,44 +69,14 @@
 			<locationURI>STUDIO_SDK_LOC/Device/EFM8UB2/peripheral_driver/src/spi_0.c</locationURI>
 		</link>
 		<link>
-			<name>lib/bsp/efm8_memory_lcd/inc/config/disp_config.h</name>
+			<name>lib/efm8ub2/peripheralDrivers/src/uart_0.c</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_memory_lcd/inc/config/disp_config.h</locationURI>
+			<locationURI>STUDIO_SDK_LOC/Device/EFM8UB2/peripheral_driver/src/uart_0.c</locationURI>
 		</link>
 		<link>
-			<name>lib/bsp/efm8_memory_lcd/inc/config/render_config.h</name>
+			<name>lib/efm8ub2/peripheralDrivers/src/uart_1.c</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_memory_lcd/inc/config/render_config.h</locationURI>
-		</link>
-		<link>
-			<name>lib/bsp/efm8_memory_lcd/inc/config/spi_config.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_memory_lcd/inc/config/spi_config.h</locationURI>
-		</link>
-		<link>
-			<name>lib/bsp/efm8_memory_lcd/inc/graphics/thinfont.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_memory_lcd/inc/graphics/thinfont.h</locationURI>
-		</link>
-		<link>
-			<name>lib/bsp/efm8_memory_lcd/inc/graphics/thinfont_numeric.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_memory_lcd/inc/graphics/thinfont_numeric.h</locationURI>
-		</link>
-		<link>
-			<name>lib/bsp/efm8_memory_lcd/inc/graphics/verticalthinfont.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_memory_lcd/inc/graphics/verticalthinfont.h</locationURI>
-		</link>
-		<link>
-			<name>lib/efm8ub2/bsp/efm8_memory_lcd/src/spi.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/Device/EFM8UB2/bsp/efm8_memory_lcd/spi.c</locationURI>
-		</link>
-		<link>
-			<name>lib/efm8ub2/bsp/efm8_memory_lcd/src/tick.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/Device/EFM8UB2/bsp/efm8_memory_lcd/tick.c</locationURI>
+			<locationURI>STUDIO_SDK_LOC/Device/EFM8UB2/peripheral_driver/src/uart_1.c</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
