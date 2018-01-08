@@ -1,4 +1,4 @@
-C51 COMPILER V9.53.0.0   SPI_0                                                             12/29/2017 16:10:07 PAGE 1   
+C51 COMPILER V9.53.0.0   SPI_0                                                             01/08/2018 09:45:17 PAGE 1   
 
 
 C51 COMPILER V9.53.0.0, COMPILATION OF MODULE SPI_0
@@ -63,7 +63,7 @@ line level    source
   45   1        {
   46   2          SPI0DAT = value;
   47   2          ret = true;
-C51 COMPILER V9.53.0.0   SPI_0                                                             12/29/2017 16:10:07 PAGE 2   
+C51 COMPILER V9.53.0.0   SPI_0                                                             01/08/2018 09:45:17 PAGE 2   
 
   48   2        }
   49   1        return ret;
@@ -128,7 +128,7 @@ line level    source
  108   1        while (xferCount)
  109   1        {
  110   2          // If the transmit buffer is empty and there are still bytes to
-C51 COMPILER V9.53.0.0   SPI_0                                                             12/29/2017 16:10:07 PAGE 3   
+C51 COMPILER V9.53.0.0   SPI_0                                                             01/08/2018 09:45:17 PAGE 3   
 
  111   2          // write, then write a byte out
  112   2          if (SPI0CN0_TXBMT && txCount)
@@ -193,7 +193,7 @@ line level    source
  171   5                break;
  172   5              }
  173   4            }
-C51 COMPILER V9.53.0.0   SPI_0                                                             12/29/2017 16:10:07 PAGE 4   
+C51 COMPILER V9.53.0.0   SPI_0                                                             01/08/2018 09:45:17 PAGE 4   
 
  174   3          }
  175   2        }
@@ -258,7 +258,7 @@ line level    source
  234   1        // is used, and whether master or slave mode
  235   1        if (is4wire)
  236   1        {
-C51 COMPILER V9.53.0.0   SPI_0                                                             12/29/2017 16:10:07 PAGE 5   
+C51 COMPILER V9.53.0.0   SPI_0                                                             01/08/2018 09:45:17 PAGE 5   
 
  237   2          SPI0CN0_NSSMD0 = 1;
  238   2          SPI0CN0_NSSMD1 = isMasterMode ? 1 : 0;
@@ -323,7 +323,7 @@ line level    source
  297          SPI0_transfer(SI_VARIABLE_SEGMENT_POINTER(pTxBuffer, uint8_t,
  298                                                    EFM8PDL_SPI0_TX_SEGTYPE),
  299                        SI_VARIABLE_SEGMENT_POINTER(pRxBuffer, uint8_t,
-C51 COMPILER V9.53.0.0   SPI_0                                                             12/29/2017 16:10:07 PAGE 6   
+C51 COMPILER V9.53.0.0   SPI_0                                                             01/08/2018 09:45:17 PAGE 6   
 
  300                                                    EFM8PDL_SPI0_RX_SEGTYPE),
  301                        SPI0_TransferDirection_t dir,
@@ -388,7 +388,7 @@ line level    source
               
                   // Otherwise no tx data, so just stuff zeroes
                   else
-C51 COMPILER V9.53.0.0   SPI_0                                                             12/29/2017 16:10:07 PAGE 7   
+C51 COMPILER V9.53.0.0   SPI_0                                                             01/08/2018 09:45:17 PAGE 7   
 
                   {
                     SPI0DAT = 0;
@@ -453,7 +453,7 @@ line level    source
  423   3            // If the user provided an RX buffer then read a byte into that.
  424   3            if (useRx)
  425   3            {
-C51 COMPILER V9.53.0.0   SPI_0                                                             12/29/2017 16:10:07 PAGE 8   
+C51 COMPILER V9.53.0.0   SPI_0                                                             01/08/2018 09:45:17 PAGE 8   
 
  426   4              *pRxBuf = SPI0DAT;
  427   4              ++pRxBuf;
@@ -518,7 +518,7 @@ line level    source
                 }
               #endif // EFM8PDL_SPI0_USE_ERR_CALLBACK
  488   1      }
-C51 COMPILER V9.53.0.0   SPI_0                                                             12/29/2017 16:10:07 PAGE 9   
+C51 COMPILER V9.53.0.0   SPI_0                                                             01/08/2018 09:45:17 PAGE 9   
 
  489          
  490          #endif // EFM8PDL_SPI0_USE_BUFFER

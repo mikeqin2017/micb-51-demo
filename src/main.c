@@ -17,6 +17,8 @@
 //-----------------------------------------------------------------------------
 // Global Constants
 //-----------------------------------------------------------------------------
+#define EN 1
+#define DISEN 0     //SPI CS effective signal define
 #define BUFFER_LENGTH   5
 #define SYSCLK                24500000 // Internal oscillator frequency in Hz
 
@@ -70,6 +72,9 @@ SI_SEGMENT_VARIABLE(buffer[BUFFER_LENGTH], uint8_t, SI_SEG_XDATA);
 SI_SEGMENT_VARIABLE(SPI_TxBuf[MAX_BUFFER_SIZE+1], uint8_t, EFM8PDL_SPI0_TX_SEGTYPE);
 SI_SEGMENT_VARIABLE(SPI_RxBuf[MAX_BUFFER_SIZE+1], uint8_t, EFM8PDL_SPI0_RX_SEGTYPE);
 
+extern uint8_t Uart1_Buffer[5];
+extern uint8_t Uart0_Buffer[5];
+
 
 uint8_t* pSMB_DATA_IN;           // Global pointer for SMBus data
                                        // All receive data is written here
@@ -122,12 +127,16 @@ SI_SBIT(SDA, SFR_P2, 3);                  // SW1 ='0' means switch pressed
 SI_SBIT(SCL, SFR_P2, 4);                  // SW2 ='0' means switch pressed
 SI_SBIT(CS, SFR_P1, 1);
 
-void SPI_Byte_Write (uint8_t writeData);
-uint8_t SPI_Byte_Read(uint8_t writeData);
 void Delay(void);
+
 void EEPROM_ByteWrite(uint8_t addr, uint8_t dat);
 uint8_t EEPROM_ByteRead(uint8_t addr);
 
+uint8_t SPI_Transfer_Byte(uint8_t Data);
+uint16_t SPI_Transfer_Word(uint8_t addr);
+
+void UART1_Word_Write(uint16_t Data);
+void UART0_Word_Write(uint16_t Data);
 
 
 //-----------------------------------------------------------------------------
@@ -148,7 +157,6 @@ void SiLabs_Startup (void)
 //-----------------------------------------------------------------------------
 void main (void)
 {
-	uint8_t Data1,Data2;
    enter_DefaultMode_from_RESET();
    UART0_init(UART0_RX_ENABLE, UART0_WIDTH_8, UART0_MULTIPROC_DISABLE);
    SPI0_init(SPI0_CLKMODE_0,true,false);
@@ -165,22 +173,13 @@ void main (void)
       if ((UART0_rxBytesRemaining() == 0) && (UART0_txBytesRemaining() == 0))
       {
          UART0_readBuffer(buffer, BUFFER_LENGTH);
+
       }
 
       if ((UART1_rxBytesRemaining() == 0) && (UART1_txBytesRemaining() == 0))
       {
          UART1_readBuffer(buffer, BUFFER_LENGTH);
       }
-      /*SPI_Byte_Write(0x80);
-      SPI_Byte_Write(0x0);*/
-      CS=1;
-      SPI0_writeByte(0x80);
-      Data1 = SPI0DAT;
-      SPI0_writeByte(0x00);
-      Data2 = SPI0DAT;
-      while(SPI0_isBusy());
-      CS=0;
-
       Delay();
    }
 }
@@ -190,8 +189,7 @@ void main (void)
 //-----------------------------------------------------------------------------
 void UART0_receiveCompleteCb ()   //UART0 receive interrupter
 {
-   UART0_writeBuffer(buffer, BUFFER_LENGTH);
-
+   //UART0_writeBuffer(buffer, BUFFER_LENGTH);
 }
 
 void UART0_transmitCompleteCb ()  //UART0 transmit interrupter
@@ -201,23 +199,20 @@ void UART0_transmitCompleteCb ()  //UART0 transmit interrupter
 
 void UART1_receiveCompleteCb ()  //UART1 receive interrupter
 {
-	uint8_t data1,data2;
-	if(buffer[0]==0x55&&buffer[1]==0x00)
+	uint16_t Data;
+	if(Uart1_Buffer[0]==0x55&&Uart1_Buffer[1]==0x00)
 	{
-		SPI_Byte_Write(buffer[2]);
+
 	}
-	if(buffer[0]==0x55&&buffer[1]==0x01)
+	if(Uart1_Buffer[0]==0x55&&Uart1_Buffer[1]==0x01)
 	{
-         data1=SPI_Byte_Read(buffer[2]);
-         data1=SPI_Byte_Read(0);
-         UART1_write(data1);
-         UART1_write(data2);
+         Data=SPI_Transfer_Word(Uart1_Buffer[2]);
+         UART1_Word_Write(Data);
 	}
 	else
 	{
 
 	}
-   //UART1_writeBuffer(buffer, BUFFER_LENGTH);
 }
 
 void UART1_transmitCompleteCb ()  //UART1 transmit interrupter
@@ -228,41 +223,46 @@ void SPI0_transferCompleteCb(void)    //SPI0 interrupter
 {
 }
 
-
-void SPI_Byte_Write(uint8_t writeData)
+void UART1_Word_Write(uint16_t Data)
 {
-      CS=1;
-      SPI0_writeByte(writeData);
-      while(SPI0_isBusy());
-      CS=0;
+	uint8_t high,low;
+	high=Data>>8;
+	low=Data&0x00ff;
+	UART1_write(high);
+    UART1_write(low);
 }
 
-//-----------------------------------------------------------------------------
-// SPI_Byte_Read
-//-----------------------------------------------------------------------------
-//
-// Return Value : The byte read from the slave
-// Parameters   : None
-//
-// Reads a single byte from the SPI Slave.  The command consists of:
-//
-// Command = SPI_READ
-// Length = 1 byte of command, 1 byte of data
-//
-//-----------------------------------------------------------------------------
-uint8_t SPI_Byte_Read(uint8_t writeData)
+void UART0_Word_Write(uint16_t Data)
 {
-	 uint8_t Data;
+	uint8_t high,low;
+    low=Data>>8;
+	high=Data&0x00ff;
+	UART0_write(high);
+    UART0_write(low);
+}
 
-     CS=1;
-     SPI0_writeByte(writeData);
-     while(SPI0_isBusy());
-     CS=0;
-     if(SPI0CN0_SPIF)
-     {
-    	 Data = SPI0DAT;
-     }
-     return Data;
+uint8_t SPI_Transfer_Byte(uint8_t Data)
+{
+	CS=EN;
+	SPI0_writeByte(Data);
+    while(SPI0_isBusy());
+	Data = SPI0DAT;
+	CS=DISEN;
+	return Data;
+}
+
+uint16_t SPI_Transfer_Word(uint8_t addr)
+{
+	uint8_t high,low;
+	CS=EN;
+    SPI0_writeByte(addr);
+    while(SPI0_isBusy());
+	high = SPI0DAT;
+	SPI0_writeByte(0x00);
+	while(SPI0_isBusy());
+	low = SPI0DAT;
+    CS=DISEN;
+    return (high<<8)|low;
 }
 
 //-----------------------------------------------------------------------------

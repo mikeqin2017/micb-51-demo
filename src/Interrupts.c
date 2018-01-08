@@ -92,11 +92,11 @@ SI_INTERRUPT(SMBUS0_ISR, SMBUS0_IRQn)
 	bool FAIL = 0;                       // Used by the ISR to flag failed
 										 // transfers
 
-	static char i;						 // Used by the ISR to count the
-										 // number of data bytes sent or
-										 // received
+	static char i;// Used by the ISR to count the
+				  // number of data bytes sent or
+				  // received
 
-	static bool SEND_START = 0;			 // Send a start
+	static bool SEND_START = 0;// Send a start
 
 	switch (SMB0CN0 & 0xF0)// Status vector
 	{
@@ -107,10 +107,10 @@ SI_INTERRUPT(SMBUS0_ISR, SMBUS0_IRQn)
 						// R/W bit
 		SMB0DAT |= SMB_RW;// Load R/W bit
 		SMB0CN0_STA = 0;// Manually clear START bit
-		i = 0;			// Reset data byte counter
+		i = 0;// Reset data byte counter
 		break;
 
-						// Master Transmitter: Data byte (or Slave Address) transmitted
+		// Master Transmitter: Data byte (or Slave Address) transmitted
 		case SMB_MTDB:
 		if (SMB0CN0_ACK)// Slave Address or Data Byte
 		{                             // Acknowledged?
@@ -229,5 +229,5 @@ SI_INTERRUPT(TIMER3_ISR, TIMER3_IRQn)
 	SMB0CF &= ~0x80;                    // Disable SMBus
 	SMB0CF |= 0x80;// Re-enable SMBus
 	TMR3CN0 &= ~0x80;// Clear Timer3 interrupt-pending flag
-	SMB_BUSY = 0;  // Free bus
+	SMB_BUSY = 0;// Free bus
 }

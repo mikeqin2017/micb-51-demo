@@ -1,4 +1,4 @@
-C51 COMPILER V9.53.0.0   INTERRUPTS                                                        12/29/2017 16:10:05 PAGE 1   
+C51 COMPILER V9.53.0.0   INTERRUPTS                                                        01/08/2018 09:45:14 PAGE 1   
 
 
 C51 COMPILER V9.53.0.0, COMPILATION OF MODULE INTERRUPTS
@@ -63,7 +63,7 @@ line level    source
   45          // to send or receive in the current
   46          // SMBus transfer.
   47          
-C51 COMPILER V9.53.0.0   INTERRUPTS                                                        12/29/2017 16:10:05 PAGE 2   
+C51 COMPILER V9.53.0.0   INTERRUPTS                                                        01/08/2018 09:45:14 PAGE 2   
 
   48          extern uint8_t WORD_ADDR;              // Global holder for the EEPROM word
   49          // address that will be accessed in
@@ -112,11 +112,11 @@ line level    source
   92   1              bool FAIL = 0;                       // Used by the ISR to flag failed
   93   1                                                                                       // transfers
   94   1      
-  95   1              static char i;                                           // Used by the ISR to count the
-  96   1                                                                                       // number of data bytes sent or
-  97   1                                                                                       // received
+  95   1              static char i;// Used by the ISR to count the
+  96   1                                        // number of data bytes sent or
+  97   1                                        // received
   98   1      
-  99   1              static bool SEND_START = 0;                      // Send a start
+  99   1              static bool SEND_START = 0;// Send a start
  100   1      
  101   1              switch (SMB0CN0 & 0xF0)// Status vector
  102   1              {
@@ -127,12 +127,12 @@ line level    source
  107   2                                                      // R/W bit
  108   2                      SMB0DAT |= SMB_RW;// Load R/W bit
  109   2                      SMB0CN0_STA = 0;// Manually clear START bit
- 110   2                      i = 0;                  // Reset data byte counter
-C51 COMPILER V9.53.0.0   INTERRUPTS                                                        12/29/2017 16:10:05 PAGE 3   
+ 110   2                      i = 0;// Reset data byte counter
+C51 COMPILER V9.53.0.0   INTERRUPTS                                                        01/08/2018 09:45:14 PAGE 3   
 
  111   2                      break;
  112   2      
- 113   2                                                      // Master Transmitter: Data byte (or Slave Address) transmitted
+ 113   2                      // Master Transmitter: Data byte (or Slave Address) transmitted
  114   2                      case SMB_MTDB:
  115   2                      if (SMB0CN0_ACK)// Slave Address or Data Byte
  116   2                      {                             // Acknowledged?
@@ -193,7 +193,7 @@ line level    source
  171   4                                      FAIL = 1;               // Indicate failed transfer
  172   4                              }                          // and handle at end of ISR
  173   3                      }
-C51 COMPILER V9.53.0.0   INTERRUPTS                                                        12/29/2017 16:10:05 PAGE 4   
+C51 COMPILER V9.53.0.0   INTERRUPTS                                                        01/08/2018 09:45:14 PAGE 4   
 
  174   2                      break;
  175   2      
@@ -253,12 +253,12 @@ line level    source
  229   1              SMB0CF &= ~0x80;                    // Disable SMBus
  230   1              SMB0CF |= 0x80;// Re-enable SMBus
  231   1              TMR3CN0 &= ~0x80;// Clear Timer3 interrupt-pending flag
- 232   1              SMB_BUSY = 0;  // Free bus
+ 232   1              SMB_BUSY = 0;// Free bus
  233   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-C51 COMPILER V9.53.0.0   INTERRUPTS                                                        12/29/2017 16:10:05 PAGE 5   
+C51 COMPILER V9.53.0.0   INTERRUPTS                                                        01/08/2018 09:45:14 PAGE 5   
 
    CODE SIZE        =    283    ----
    CONSTANT SIZE    =   ----    ----
