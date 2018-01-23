@@ -20,11 +20,16 @@
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.cdt.core.cnature</nature>
-		<nature>com.silabs.ide.project.core.SLSProjectNature</nature>
+		<nature>com.silabs.ss.framework.ide.project.sls.core.SLSProjectNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
 	<linkedResources>
+		<link>
+			<name>MICB-51.hwconf</name>
+			<type>1</type>
+			<location>C:/Users/shuwen.ou/SimplicityStudio/v3_workspace/MICB-51/MICB-51.hwconf</location>
+		</link>
 		<link>
 			<name>lib/bsp/bsp.h</name>
 			<type>1</type>
