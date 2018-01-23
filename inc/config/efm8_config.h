@@ -19,4 +19,3 @@
 
 
 #endif // __EFM8_CONFIG_H__
- 

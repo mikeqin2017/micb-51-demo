@@ -11,37 +11,24 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+			<triggers>full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.cdt.core.cnature</nature>
-		<nature>com.silabs.ss.framework.ide.project.sls.core.SLSProjectNature</nature>
+		<nature>com.silabs.ide.project.core.SLSProjectNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
 	<linkedResources>
-		<link>
-			<name>src/SILABS_STARTUP.A51</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/Device/shared/si8051Base/SILABS_STARTUP.A51</locationURI>
-		</link>
 		<link>
 			<name>lib/bsp/bsp.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/kits/common/bsp/bsp.h</locationURI>
-		</link>
-		<link>
-			<name>lib/bsp/efm8_retargetserial/retargetio.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_retargetserial/retargetio.c</locationURI>
-		</link>
-		<link>
-			<name>lib/bsp/efm8_retargetserial/retargetserial.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_retargetserial/retargetserial.c</locationURI>
-		</link>
-		<link>
-			<name>lib/bsp/efm8_retargetserial/retargetserial.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/kits/common/drivers/efm8_retargetserial/retargetserial.h</locationURI>
 		</link>
 		<link>
 			<name>lib/efm8ub2_slstk2001a/bsp/bsp_config.h</name>
@@ -49,9 +36,9 @@
 			<locationURI>STUDIO_SDK_LOC/kits/EFM8UB2_SLSTK2001A/config/bsp_config.h</locationURI>
 		</link>
 		<link>
-			<name>lib/efm8ub2/peripheralDrivers/inc/spi_0.h</name>
+			<name>lib/efm8ub2/peripheralDrivers/inc/assert.h</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/Device/EFM8UB2/peripheral_driver/inc/spi_0.h</locationURI>
+			<locationURI>STUDIO_SDK_LOC/Lib/efm8_assert/assert.h</locationURI>
 		</link>
 		<link>
 			<name>lib/efm8ub2/peripheralDrivers/inc/uart_0.h</name>
@@ -62,6 +49,16 @@
 			<name>lib/efm8ub2/peripheralDrivers/inc/uart_1.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/Device/EFM8UB2/peripheral_driver/inc/uart_1.h</locationURI>
+		</link>
+		<link>
+			<name>lib/efm8ub2/peripheralDrivers/src/adc_0.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/Device/EFM8UB2/peripheral_driver/src/adc_0.c</locationURI>
+		</link>
+		<link>
+			<name>lib/efm8ub2/peripheralDrivers/src/assert.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/Lib/efm8_assert/assert.c</locationURI>
 		</link>
 		<link>
 			<name>lib/efm8ub2/peripheralDrivers/src/spi_0.c</name>
