@@ -62,6 +62,21 @@
 							<tool id="com.silabs.ide.si8051.keil.toolchain.librarian.1868531501" name="Keil 8051 Library Manager" superClass="com.silabs.ide.si8051.keil.toolchain.librarian"/>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="com.silabs.ide.si8051.keil.debug#com.silabs.ide.si8051.keil:9.53.0.1787735055" name="micb-51.c" rcbsApplicability="disable" resourcePath="src/micb-51.c" toolsToInvoke="com.silabs.ide.si8051.keil.toolchain.compiler.26483585.782252992">
+						<tool id="com.silabs.ide.si8051.keil.toolchain.compiler.26483585.782252992" name="Keil 8051 Compiler" superClass="com.silabs.ide.si8051.keil.toolchain.compiler.26483585">
+							<option id="com.silabs.ide.si8051.keil.compiler.category.includes.paths.297582066" superClass="com.silabs.ide.si8051.keil.compiler.category.includes.paths" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc/config}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/kits/common/bsp&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/Device/shared/si8051base&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/Device/EFM8UB2/inc&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/Lib/efm8_assert&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/Device/EFM8UB2/peripheral_driver/inc&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/kits/EFM8UB2_SLSTK2001A/config&quot;"/>
+							</option>
+							<inputType id="com.silabs.ide.si8051.keil.compiler.inputType.1524440943" superClass="com.silabs.ide.si8051.keil.compiler.inputType"/>
+						</tool>
+					</fileInfo>
 					<sourceEntries>
 						<entry excluding=".git/lfs|.git/objects/info|.git/refs/tags|lib/efm8ub2_slstk2001a|lib/efm8bb1_slstk2020a|lib/efm8bb2_slstk2021a|lib/efm8bb3_slstk2022a|lib/efm8bb3_brd5203a|lib/efm8bb3_brd5204a|lib/efm8lb1_slstk2030a|lib/efm8sb1_slstk2010a|lib/efm8sb2_slstk2011a|lib/efm8ub1_slstk2000a|lib/efm8ub3_sltb005a|lib/efm8bb1|lib/efm8bb2|lib/efm8bb3|lib/efm8lb1|lib/efm8ub1|lib/efm8sb1|lib/efm8sb2" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>

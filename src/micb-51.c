@@ -57,6 +57,7 @@
 #include "adc_0.h"
 #include <stdint.h>
 #include "si_toolchain.h"
+#include "SI_EFM8UB2_Defs.h"
 
 
 //-----------------------------------------------------------------------------
