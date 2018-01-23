@@ -21,23 +21,23 @@
 					<extension id="com.silabs.ide.si8051.keil.KeilErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 				</extensions>
 			</storageModule>
-			<storageModule buildConfig.stockConfigId="com.silabs.ide.si8051.keil.debug#com.silabs.ide.si8051.keil:9.53.0" cppBuildConfig.builtinIncludes="studio:/sdk/Device/shared/si8051Base/ studio:/sdk/Device/EFM8UB2/ studio:/sdk/Device/EFM8UB2/inc/ studio:/sdk/Device/EFM8UB2/peripheral_driver/inc/ studio:/sdk/kits/common/bsp/ studio:/sdk/kits/EFM8UB2_SLSTK2001A/config/ studio:/sdk/Device/shared/si8051Base/ studio:/sdk/Device/EFM8UB2/ studio:/sdk/Device/EFM8UB2/inc/ studio:/sdk/Device/EFM8UB2/peripheral_driver/inc/ studio:/sdk/kits/common/bsp/ studio:/sdk/kits/EFM8UB2_SLSTK2001A/config/" cppBuildConfig.builtinLibraryFiles="" cppBuildConfig.builtinLibraryNames="" cppBuildConfig.builtinLibraryObjects="" cppBuildConfig.builtinLibraryPaths="" cppBuildConfig.builtinMacros="DEBUG" moduleId="com.silabs.ide.project.core" projectCommon.referencedModules="[{&quot;module&quot;:&quot;&lt;project:MModule xmlns:project=\&quot;http://www.silabs.com/sls/Project.ecore\&quot; builtin=\&quot;true\&quot; id=\&quot;com.silabs.sdk.si8051.external.bsp.efm8_bsp\&quot;/&gt;&quot;,&quot;builtinExcludes&quot;:[],&quot;builtin&quot;:true,&quot;builtinSources&quot;:[&quot;lib/bsp/bsp.h&quot;,&quot;lib/efm8ub2_slstk2001a/bsp/bsp_config.h&quot;]},{&quot;module&quot;:&quot;&lt;project:MModule xmlns:project=\&quot;http://www.silabs.com/sls/Project.ecore\&quot; builtin=\&quot;true\&quot; id=\&quot;com.silabs.sdk.si8051.external.efm8PeripheralDriver.uart0\&quot;/&gt;&quot;,&quot;builtinExcludes&quot;:[],&quot;builtin&quot;:true,&quot;builtinSources&quot;:[&quot;lib/efm8ub2/peripheralDrivers/src/uart_0.c&quot;,&quot;lib/efm8ub2/peripheralDrivers/inc/uart_0.h&quot;]}]" projectCommon.toolchainId="com.silabs.ide.si8051.keil:9.53.0"/>
+			<storageModule buildConfig.stockConfigId="com.silabs.ide.si8051.keil.debug#com.silabs.ide.si8051.keil:9.53.0" cppBuildConfig.builtinIncludes="studio:/sdk/Device/shared/si8051Base/ studio:/sdk/Device/EFM8UB2/ studio:/sdk/Device/EFM8UB2/inc/ studio:/sdk/Device/EFM8UB2/peripheral_driver/inc/ studio:/sdk/kits/common/bsp/ studio:/sdk/Device/shared/si8051Base/ studio:/sdk/Device/EFM8UB2/ studio:/sdk/Device/EFM8UB2/inc/ studio:/sdk/Device/EFM8UB2/peripheral_driver/inc/ studio:/sdk/kits/common/bsp/" cppBuildConfig.builtinLibraryFiles="" cppBuildConfig.builtinLibraryNames="" cppBuildConfig.builtinLibraryObjects="" cppBuildConfig.builtinLibraryPaths="" cppBuildConfig.builtinMacros="DEBUG" moduleId="com.silabs.ide.project.core" projectCommon.referencedModules="[{&quot;module&quot;:&quot;&lt;project:MModule xmlns:project=\&quot;http://www.silabs.com/sls/Project.ecore\&quot; builtin=\&quot;true\&quot; id=\&quot;com.silabs.sdk.si8051.external.bsp.efm8_bsp\&quot;/&gt;&quot;,&quot;builtinExcludes&quot;:[],&quot;builtin&quot;:true,&quot;builtinSources&quot;:[&quot;lib/bsp/bsp.h&quot;]},{&quot;module&quot;:&quot;&lt;project:MModule xmlns:project=\&quot;http://www.silabs.com/sls/Project.ecore\&quot; builtin=\&quot;true\&quot; id=\&quot;com.silabs.sdk.si8051.external.efm8PeripheralDriver.uart0\&quot;/&gt;&quot;,&quot;builtinExcludes&quot;:[],&quot;builtin&quot;:true,&quot;builtinSources&quot;:[&quot;lib/efm8ub2/peripheralDrivers/src/uart_0.c&quot;,&quot;lib/efm8ub2/peripheralDrivers/inc/uart_0.h&quot;]}]" projectCommon.toolchainId="com.silabs.ide.si8051.keil:9.53.0"/>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 				<configuration artifactExtension="omf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="com.silabs.ide.si8051.keil.debug#com.silabs.ide.si8051.keil:9.53.0" name="Keil 8051 v9.53 - Debug" parent="com.silabs.ide.si8051.keil.exe.default">
 					<folderInfo id="com.silabs.ide.si8051.keil.debug#com.silabs.ide.si8051.keil:9.53.0." name="/" resourcePath="">
-						<toolChain id="com.silabs.ide.si8051.keil.toolchain.exe.default.387277170" name="Keil 8051" superClass="com.silabs.ide.si8051.keil.toolchain.exe.default">
-							<option id="com.silabs.ide.si8051.keil.toolchain.category.general.debug.1032044614" superClass="com.silabs.ide.si8051.keil.toolchain.category.general.debug"/>
-							<option id="com.silabs.ide.si8051.keil.toolchain.category.general.extended_linker.1460217062" superClass="com.silabs.ide.si8051.keil.toolchain.category.general.extended_linker" value="true" valueType="boolean"/>
-							<option id="com.silabs.ide.si8051.keil.toolchain.category.general.extended_assembler.1768675940" superClass="com.silabs.ide.si8051.keil.toolchain.category.general.extended_assembler" value="true" valueType="boolean"/>
-							<targetPlatform binaryParser="com.silabs.ide.si8051.debug.omf.OMF;com.silabs.ide.si8051.debug.omf.OMF2;com.silabs.ide.debug.core.BIN;com.silabs.ide.debug.core.HEX;com.silabs.ide.debug.core.S37" id="com.silabs.ide.si8051.keil.targetplatform.1427005633" isAbstract="false" superClass="com.silabs.ide.si8051.keil.targetplatform"/>
-							<builder buildPath="${workspace_loc:/MICB-51}/Keil 8051 v9.53 - Debug" id="com.silabs.ide.si8051.keil.builder.1468794297" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Keil Builder" parallelBuildOn="false" superClass="com.silabs.ide.si8051.keil.builder"/>
-							<tool id="com.silabs.ide.si8051.keil.toolchain.compiler.1261270404" name="Keil 8051 Compiler" superClass="com.silabs.ide.si8051.keil.toolchain.compiler">
-								<option id="com.silabs.ide.si8051.keil.compiler.category.symbols.def.1516536797" superClass="com.silabs.ide.si8051.keil.compiler.category.symbols.def" valueType="definedSymbols">
+						<toolChain id="com.silabs.ide.si8051.keil.toolchain.exe.default.738236390" name="Keil 8051" superClass="com.silabs.ide.si8051.keil.toolchain.exe.default">
+							<option id="com.silabs.ide.si8051.keil.toolchain.category.general.debug.1154380271" superClass="com.silabs.ide.si8051.keil.toolchain.category.general.debug"/>
+							<option id="com.silabs.ide.si8051.keil.toolchain.category.general.extended_linker.905866796" superClass="com.silabs.ide.si8051.keil.toolchain.category.general.extended_linker" value="true" valueType="boolean"/>
+							<option id="com.silabs.ide.si8051.keil.toolchain.category.general.extended_assembler.1155965419" superClass="com.silabs.ide.si8051.keil.toolchain.category.general.extended_assembler" value="true" valueType="boolean"/>
+							<targetPlatform binaryParser="com.silabs.ide.si8051.debug.omf.OMF;com.silabs.ide.si8051.debug.omf.OMF2;com.silabs.ide.debug.core.BIN;com.silabs.ide.debug.core.HEX;com.silabs.ide.debug.core.S37" id="com.silabs.ide.si8051.keil.targetplatform.1281345221" isAbstract="false" superClass="com.silabs.ide.si8051.keil.targetplatform"/>
+							<builder buildPath="${workspace_loc:/micb-51}/Keil 8051 v9.53 - Debug" id="com.silabs.ide.si8051.keil.builder.1229869954" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Keil Builder" parallelBuildOn="false" superClass="com.silabs.ide.si8051.keil.builder"/>
+							<tool id="com.silabs.ide.si8051.keil.toolchain.compiler.1755674039" name="Keil 8051 Compiler" superClass="com.silabs.ide.si8051.keil.toolchain.compiler">
+								<option id="com.silabs.ide.si8051.keil.compiler.category.symbols.def.1701955641" superClass="com.silabs.ide.si8051.keil.compiler.category.symbols.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG=1"/>
 								</option>
-								<option id="com.silabs.ide.si8051.keil.compiler.category.optimization.emphasis.1304192884" superClass="com.silabs.ide.si8051.keil.compiler.category.optimization.emphasis" value="com.silabs.ide.si8051.keil.compiler.category.optimization.emphasis.speed" valueType="enumerated"/>
-								<option id="com.silabs.ide.si8051.keil.compiler.category.optimization.level.324560306" superClass="com.silabs.ide.si8051.keil.compiler.category.optimization.level"/>
-								<option id="com.silabs.ide.si8051.keil.compiler.category.includes.paths.759783215" superClass="com.silabs.ide.si8051.keil.compiler.category.includes.paths" valueType="includePath">
+								<option id="com.silabs.ide.si8051.keil.compiler.category.optimization.emphasis.1007356440" superClass="com.silabs.ide.si8051.keil.compiler.category.optimization.emphasis" value="com.silabs.ide.si8051.keil.compiler.category.optimization.emphasis.speed" valueType="enumerated"/>
+								<option id="com.silabs.ide.si8051.keil.compiler.category.optimization.level.357317377" superClass="com.silabs.ide.si8051.keil.compiler.category.optimization.level"/>
+								<option id="com.silabs.ide.si8051.keil.compiler.category.includes.paths.708875898" superClass="com.silabs.ide.si8051.keil.compiler.category.includes.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc/config}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/Device/shared/si8051Base&quot;"/>
@@ -45,26 +45,24 @@
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/Device/EFM8UB2/inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/Device/EFM8UB2/peripheral_driver/inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/kits/common/bsp&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/kits/EFM8UB2_SLSTK2001A/config&quot;"/>
 								</option>
-								<inputType id="com.silabs.ide.si8051.keil.compiler.inputType.908899508" superClass="com.silabs.ide.si8051.keil.compiler.inputType"/>
+								<inputType id="com.silabs.ide.si8051.keil.compiler.inputType.800591431" superClass="com.silabs.ide.si8051.keil.compiler.inputType"/>
 							</tool>
-							<tool command="AX51" id="com.silabs.ide.si8051.keil.toolchain.assembler.678493585" name="Keil 8051 Assembler" superClass="com.silabs.ide.si8051.keil.toolchain.assembler">
-								<option id="com.silabs.ide.si8051.keil.assembler.category.symbols.def.519096664" superClass="com.silabs.ide.si8051.keil.assembler.category.symbols.def"/>
-								<option id="com.silabs.ide.si8051.keil.assembler.category.includes.paths.952054524" superClass="com.silabs.ide.si8051.keil.assembler.category.includes.paths" valueType="includePath">
+							<tool command="AX51" id="com.silabs.ide.si8051.keil.toolchain.assembler.720645133" name="Keil 8051 Assembler" superClass="com.silabs.ide.si8051.keil.toolchain.assembler">
+								<option id="com.silabs.ide.si8051.keil.assembler.category.symbols.def.702591787" superClass="com.silabs.ide.si8051.keil.assembler.category.symbols.def"/>
+								<option id="com.silabs.ide.si8051.keil.assembler.category.includes.paths.370211877" superClass="com.silabs.ide.si8051.keil.assembler.category.includes.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/Device/shared/si8051Base&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/Device/EFM8UB2&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/Device/EFM8UB2/inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/Device/EFM8UB2/peripheral_driver/inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/kits/common/bsp&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/kits/EFM8UB2_SLSTK2001A/config&quot;"/>
 								</option>
-								<inputType id="com.silabs.ide.si8051.keil.assembler.inputType.1659895222" superClass="com.silabs.ide.si8051.keil.assembler.inputType"/>
+								<inputType id="com.silabs.ide.si8051.keil.assembler.inputType.1819463350" superClass="com.silabs.ide.si8051.keil.assembler.inputType"/>
 							</tool>
-							<tool command="LX51" id="com.silabs.ide.si8051.keil.toolchain.linker.1944342440" name="Keil 8051 Linker" superClass="com.silabs.ide.si8051.keil.toolchain.linker">
-								<inputType id="com.silabs.ide.si8051.keil.linker.inputType.116020050" superClass="com.silabs.ide.si8051.keil.linker.inputType"/>
+							<tool command="LX51" id="com.silabs.ide.si8051.keil.toolchain.linker.475134687" name="Keil 8051 Linker" superClass="com.silabs.ide.si8051.keil.toolchain.linker">
+								<inputType id="com.silabs.ide.si8051.keil.linker.inputType.709494011" superClass="com.silabs.ide.si8051.keil.linker.inputType"/>
 							</tool>
-							<tool id="com.silabs.ide.si8051.keil.toolchain.librarian.1529909395" name="Keil 8051 Library Manager" superClass="com.silabs.ide.si8051.keil.toolchain.librarian"/>
+							<tool id="com.silabs.ide.si8051.keil.toolchain.librarian.2031355915" name="Keil 8051 Library Manager" superClass="com.silabs.ide.si8051.keil.toolchain.librarian"/>
 						</toolChain>
 					</folderInfo>
 				</configuration>
@@ -89,24 +87,24 @@
 					<extension id="com.silabs.ide.si8051.keil.KeilErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 				</extensions>
 			</storageModule>
-			<storageModule buildConfig.stockConfigId="com.silabs.ide.si8051.keil.release#com.silabs.ide.si8051.keil:9.53.0" cppBuildConfig.builtinIncludes="studio:/sdk/Device/shared/si8051Base/ studio:/sdk/Device/EFM8UB2/ studio:/sdk/Device/EFM8UB2/inc/ studio:/sdk/Device/EFM8UB2/peripheral_driver/inc/ studio:/sdk/kits/common/bsp/ studio:/sdk/kits/EFM8UB2_SLSTK2001A/config/ studio:/sdk/Device/shared/si8051Base/ studio:/sdk/Device/EFM8UB2/ studio:/sdk/Device/EFM8UB2/inc/ studio:/sdk/Device/EFM8UB2/peripheral_driver/inc/ studio:/sdk/kits/common/bsp/ studio:/sdk/kits/EFM8UB2_SLSTK2001A/config/" cppBuildConfig.builtinLibraryFiles="" cppBuildConfig.builtinLibraryNames="" cppBuildConfig.builtinLibraryObjects="" cppBuildConfig.builtinLibraryPaths="" cppBuildConfig.builtinMacros="NDEBUG" moduleId="com.silabs.ide.project.core" projectCommon.referencedModules="[{&quot;module&quot;:&quot;&lt;project:MModule xmlns:project=\&quot;http://www.silabs.com/sls/Project.ecore\&quot; builtin=\&quot;true\&quot; id=\&quot;com.silabs.sdk.si8051.external.bsp.efm8_bsp\&quot;/&gt;&quot;,&quot;builtinExcludes&quot;:[],&quot;builtin&quot;:true,&quot;builtinSources&quot;:[&quot;lib/bsp/bsp.h&quot;,&quot;lib/efm8ub2_slstk2001a/bsp/bsp_config.h&quot;]},{&quot;module&quot;:&quot;&lt;project:MModule xmlns:project=\&quot;http://www.silabs.com/sls/Project.ecore\&quot; builtin=\&quot;true\&quot; id=\&quot;com.silabs.sdk.si8051.external.efm8PeripheralDriver.uart0\&quot;/&gt;&quot;,&quot;builtinExcludes&quot;:[],&quot;builtin&quot;:true,&quot;builtinSources&quot;:[&quot;lib/efm8ub2/peripheralDrivers/src/uart_0.c&quot;,&quot;lib/efm8ub2/peripheralDrivers/inc/uart_0.h&quot;]}]" projectCommon.toolchainId="com.silabs.ide.si8051.keil:9.53.0"/>
+			<storageModule buildConfig.stockConfigId="com.silabs.ide.si8051.keil.release#com.silabs.ide.si8051.keil:9.53.0" cppBuildConfig.builtinIncludes="studio:/sdk/Device/shared/si8051Base/ studio:/sdk/Device/EFM8UB2/ studio:/sdk/Device/EFM8UB2/inc/ studio:/sdk/Device/EFM8UB2/peripheral_driver/inc/ studio:/sdk/kits/common/bsp/ studio:/sdk/Device/shared/si8051Base/ studio:/sdk/Device/EFM8UB2/ studio:/sdk/Device/EFM8UB2/inc/ studio:/sdk/Device/EFM8UB2/peripheral_driver/inc/ studio:/sdk/kits/common/bsp/" cppBuildConfig.builtinLibraryFiles="" cppBuildConfig.builtinLibraryNames="" cppBuildConfig.builtinLibraryObjects="" cppBuildConfig.builtinLibraryPaths="" cppBuildConfig.builtinMacros="NDEBUG" moduleId="com.silabs.ide.project.core" projectCommon.referencedModules="[{&quot;module&quot;:&quot;&lt;project:MModule xmlns:project=\&quot;http://www.silabs.com/sls/Project.ecore\&quot; builtin=\&quot;true\&quot; id=\&quot;com.silabs.sdk.si8051.external.bsp.efm8_bsp\&quot;/&gt;&quot;,&quot;builtinExcludes&quot;:[],&quot;builtin&quot;:true,&quot;builtinSources&quot;:[&quot;lib/bsp/bsp.h&quot;]},{&quot;module&quot;:&quot;&lt;project:MModule xmlns:project=\&quot;http://www.silabs.com/sls/Project.ecore\&quot; builtin=\&quot;true\&quot; id=\&quot;com.silabs.sdk.si8051.external.efm8PeripheralDriver.uart0\&quot;/&gt;&quot;,&quot;builtinExcludes&quot;:[],&quot;builtin&quot;:true,&quot;builtinSources&quot;:[&quot;lib/efm8ub2/peripheralDrivers/src/uart_0.c&quot;,&quot;lib/efm8ub2/peripheralDrivers/inc/uart_0.h&quot;]}]" projectCommon.toolchainId="com.silabs.ide.si8051.keil:9.53.0"/>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 				<configuration artifactExtension="omf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="com.silabs.ide.si8051.keil.release#com.silabs.ide.si8051.keil:9.53.0" name="Keil 8051 v9.53 - Release" parent="com.silabs.ide.si8051.keil.exe.default">
 					<folderInfo id="com.silabs.ide.si8051.keil.release#com.silabs.ide.si8051.keil:9.53.0." name="/" resourcePath="">
-						<toolChain id="com.silabs.ide.si8051.keil.toolchain.exe.default.530399861" name="Keil 8051" superClass="com.silabs.ide.si8051.keil.toolchain.exe.default">
-							<option id="com.silabs.ide.si8051.keil.toolchain.category.general.debug.1182938857" superClass="com.silabs.ide.si8051.keil.toolchain.category.general.debug"/>
-							<option id="com.silabs.ide.si8051.keil.toolchain.category.general.extended_linker.553372271" superClass="com.silabs.ide.si8051.keil.toolchain.category.general.extended_linker" value="true" valueType="boolean"/>
-							<option id="com.silabs.ide.si8051.keil.toolchain.category.general.extended_assembler.811061586" superClass="com.silabs.ide.si8051.keil.toolchain.category.general.extended_assembler" value="true" valueType="boolean"/>
-							<targetPlatform binaryParser="com.silabs.ide.si8051.debug.omf.OMF;com.silabs.ide.si8051.debug.omf.OMF2;com.silabs.ide.debug.core.BIN;com.silabs.ide.debug.core.HEX;com.silabs.ide.debug.core.S37" id="com.silabs.ide.si8051.keil.targetplatform.2070131389" isAbstract="false" superClass="com.silabs.ide.si8051.keil.targetplatform"/>
-							<builder buildPath="${workspace_loc:/MICB-51}/Keil 8051 v9.53 - Release" id="com.silabs.ide.si8051.keil.builder.1368083456" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Keil Builder" parallelBuildOn="false" superClass="com.silabs.ide.si8051.keil.builder"/>
-							<tool id="com.silabs.ide.si8051.keil.toolchain.compiler.823218397" name="Keil 8051 Compiler" superClass="com.silabs.ide.si8051.keil.toolchain.compiler">
-								<option id="com.silabs.ide.si8051.keil.compiler.category.optimization.level.923614538" superClass="com.silabs.ide.si8051.keil.compiler.category.optimization.level" value="com.silabs.ide.si8051.keil.compiler.category.optimization.level.9" valueType="enumerated"/>
-								<option id="com.silabs.ide.si8051.keil.compiler.category.symbols.def.1672189639" superClass="com.silabs.ide.si8051.keil.compiler.category.symbols.def" valueType="definedSymbols">
+						<toolChain id="com.silabs.ide.si8051.keil.toolchain.exe.default.757557974" name="Keil 8051" superClass="com.silabs.ide.si8051.keil.toolchain.exe.default">
+							<option id="com.silabs.ide.si8051.keil.toolchain.category.general.debug.396128095" superClass="com.silabs.ide.si8051.keil.toolchain.category.general.debug"/>
+							<option id="com.silabs.ide.si8051.keil.toolchain.category.general.extended_linker.1762186380" superClass="com.silabs.ide.si8051.keil.toolchain.category.general.extended_linker" value="true" valueType="boolean"/>
+							<option id="com.silabs.ide.si8051.keil.toolchain.category.general.extended_assembler.1948797248" superClass="com.silabs.ide.si8051.keil.toolchain.category.general.extended_assembler" value="true" valueType="boolean"/>
+							<targetPlatform binaryParser="com.silabs.ide.si8051.debug.omf.OMF;com.silabs.ide.si8051.debug.omf.OMF2;com.silabs.ide.debug.core.BIN;com.silabs.ide.debug.core.HEX;com.silabs.ide.debug.core.S37" id="com.silabs.ide.si8051.keil.targetplatform.1423225438" isAbstract="false" superClass="com.silabs.ide.si8051.keil.targetplatform"/>
+							<builder buildPath="${workspace_loc:/micb-51}/Keil 8051 v9.53 - Release" id="com.silabs.ide.si8051.keil.builder.1497266464" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Keil Builder" parallelBuildOn="false" superClass="com.silabs.ide.si8051.keil.builder"/>
+							<tool id="com.silabs.ide.si8051.keil.toolchain.compiler.1597173284" name="Keil 8051 Compiler" superClass="com.silabs.ide.si8051.keil.toolchain.compiler">
+								<option id="com.silabs.ide.si8051.keil.compiler.category.optimization.level.2011753645" superClass="com.silabs.ide.si8051.keil.compiler.category.optimization.level" value="com.silabs.ide.si8051.keil.compiler.category.optimization.level.9" valueType="enumerated"/>
+								<option id="com.silabs.ide.si8051.keil.compiler.category.symbols.def.207844608" superClass="com.silabs.ide.si8051.keil.compiler.category.symbols.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="NDEBUG=1"/>
 								</option>
-								<option id="com.silabs.ide.si8051.keil.compiler.category.optimization.emphasis.2041899858" superClass="com.silabs.ide.si8051.keil.compiler.category.optimization.emphasis" value="com.silabs.ide.si8051.keil.compiler.category.optimization.emphasis.speed" valueType="enumerated"/>
-								<option id="com.silabs.ide.si8051.keil.compiler.category.optimization.coloring.1647684913" superClass="com.silabs.ide.si8051.keil.compiler.category.optimization.coloring" value="true" valueType="boolean"/>
-								<option id="com.silabs.ide.si8051.keil.compiler.category.includes.paths.2128576750" superClass="com.silabs.ide.si8051.keil.compiler.category.includes.paths" valueType="includePath">
+								<option id="com.silabs.ide.si8051.keil.compiler.category.optimization.emphasis.2060337516" superClass="com.silabs.ide.si8051.keil.compiler.category.optimization.emphasis" value="com.silabs.ide.si8051.keil.compiler.category.optimization.emphasis.speed" valueType="enumerated"/>
+								<option id="com.silabs.ide.si8051.keil.compiler.category.optimization.coloring.291898630" superClass="com.silabs.ide.si8051.keil.compiler.category.optimization.coloring" value="true" valueType="boolean"/>
+								<option id="com.silabs.ide.si8051.keil.compiler.category.includes.paths.2014913230" superClass="com.silabs.ide.si8051.keil.compiler.category.includes.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc/config}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/Device/shared/si8051Base&quot;"/>
@@ -114,26 +112,24 @@
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/Device/EFM8UB2/inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/Device/EFM8UB2/peripheral_driver/inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/kits/common/bsp&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/kits/EFM8UB2_SLSTK2001A/config&quot;"/>
 								</option>
-								<inputType id="com.silabs.ide.si8051.keil.compiler.inputType.1747800088" superClass="com.silabs.ide.si8051.keil.compiler.inputType"/>
+								<inputType id="com.silabs.ide.si8051.keil.compiler.inputType.951686824" superClass="com.silabs.ide.si8051.keil.compiler.inputType"/>
 							</tool>
-							<tool command="AX51" id="com.silabs.ide.si8051.keil.toolchain.assembler.1461709437" name="Keil 8051 Assembler" superClass="com.silabs.ide.si8051.keil.toolchain.assembler">
-								<option id="com.silabs.ide.si8051.keil.assembler.category.symbols.def.1078120174" superClass="com.silabs.ide.si8051.keil.assembler.category.symbols.def"/>
-								<option id="com.silabs.ide.si8051.keil.assembler.category.includes.paths.1962339242" superClass="com.silabs.ide.si8051.keil.assembler.category.includes.paths" valueType="includePath">
+							<tool command="AX51" id="com.silabs.ide.si8051.keil.toolchain.assembler.1517230703" name="Keil 8051 Assembler" superClass="com.silabs.ide.si8051.keil.toolchain.assembler">
+								<option id="com.silabs.ide.si8051.keil.assembler.category.symbols.def.1077614102" superClass="com.silabs.ide.si8051.keil.assembler.category.symbols.def"/>
+								<option id="com.silabs.ide.si8051.keil.assembler.category.includes.paths.1374531665" superClass="com.silabs.ide.si8051.keil.assembler.category.includes.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/Device/shared/si8051Base&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/Device/EFM8UB2&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/Device/EFM8UB2/inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/Device/EFM8UB2/peripheral_driver/inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/kits/common/bsp&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${StudioSdkPath}/kits/EFM8UB2_SLSTK2001A/config&quot;"/>
 								</option>
-								<inputType id="com.silabs.ide.si8051.keil.assembler.inputType.969619286" superClass="com.silabs.ide.si8051.keil.assembler.inputType"/>
+								<inputType id="com.silabs.ide.si8051.keil.assembler.inputType.537473128" superClass="com.silabs.ide.si8051.keil.assembler.inputType"/>
 							</tool>
-							<tool command="LX51" id="com.silabs.ide.si8051.keil.toolchain.linker.209033652" name="Keil 8051 Linker" superClass="com.silabs.ide.si8051.keil.toolchain.linker">
-								<inputType id="com.silabs.ide.si8051.keil.linker.inputType.842373314" superClass="com.silabs.ide.si8051.keil.linker.inputType"/>
+							<tool command="LX51" id="com.silabs.ide.si8051.keil.toolchain.linker.1890665396" name="Keil 8051 Linker" superClass="com.silabs.ide.si8051.keil.toolchain.linker">
+								<inputType id="com.silabs.ide.si8051.keil.linker.inputType.260290625" superClass="com.silabs.ide.si8051.keil.linker.inputType"/>
 							</tool>
-							<tool id="com.silabs.ide.si8051.keil.toolchain.librarian.2033822857" name="Keil 8051 Library Manager" superClass="com.silabs.ide.si8051.keil.toolchain.librarian"/>
+							<tool id="com.silabs.ide.si8051.keil.toolchain.librarian.1175544976" name="Keil 8051 Library Manager" superClass="com.silabs.ide.si8051.keil.toolchain.librarian"/>
 						</toolChain>
 					</folderInfo>
 				</configuration>
@@ -141,7 +137,7 @@
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
 		</cconfiguration>
 	</storageModule>
-	<storageModule moduleId="com.silabs.ide.project.core" project.generation="1" projectCommon.buildArtifactType="EXE" projectCommon.importModeId="LINK" projectCommon.kitId="com.silabs.kit.si8051.efm8ub2_slstk2001a" projectCommon.partId="com.silabs.mcu.si8051.efm8ub2_g.efm8ub20f32g" projectCommon.sdkId="com.silabs.sdk.si8051.sls:3.0.0" projectCommon.toolchainId="com.silabs.ide.si8051.keil:9.53.0"/>
+	<storageModule moduleId="com.silabs.ide.project.core" project.generation="1" projectCommon.buildArtifactType="EXE" projectCommon.importModeId="LINK" projectCommon.kitId="com.silabs.ide.kit.none" projectCommon.partId="com.silabs.mcu.si8051.efm8ub2_g.efm8ub20f32g" projectCommon.sdkId="com.silabs.sdk.si8051.sls:3.0.0" projectCommon.toolchainId="com.silabs.ide.si8051.keil:9.53.0"/>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		<scannerConfigBuildInfo instanceId="com.silabs.ide.si8051.keil.release#com.silabs.ide.si8051.keil:9.53.0;com.silabs.ide.si8051.keil.release#com.silabs.ide.si8051.keil:9.53.0.">
@@ -152,7 +148,7 @@
 		</scannerConfigBuildInfo>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-		<project id="MICB-51.com.silabs.ide.project.core.cdt.cdtMbsProjectType.1794872455" name="SLS CDT Project" projectType="com.silabs.ide.project.core.cdt.cdtMbsProjectType"/>
+		<project id="micb-51.com.silabs.ide.project.core.cdt.cdtMbsProjectType.1432428673" name="SLS CDT Project" projectType="com.silabs.ide.project.core.cdt.cdtMbsProjectType"/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 </cproject>
